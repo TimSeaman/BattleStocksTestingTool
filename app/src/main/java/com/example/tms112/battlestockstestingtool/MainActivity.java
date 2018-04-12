@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 /*
-    public void newCompanyAdded(){
+    public void newCompanyAdded(){ 
 //        Toast.makeText(MainActivity.this, "Trigger 1", Toast.LENGTH_SHORT).show();
         ACTION = "edu.pitt.cs1699.team9.NEW_STOCK";
         Intent intent = getPackageManager().getLaunchIntentForPackage(DESTINATION_PACKAGE);
