@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         ACTION = "edu.pitt.cs1699.team9.CRASH";
-                        Intent intent = getPackageManager().getLaunchIntentForPackage(DESTINATION_PACKAGE);
+                        Intent intent = new Intent("edu.pitt.cs1699.team9.CRASH");
                         intent.setAction(ACTION);
 
                         price = box.findViewById(R.id.price);
