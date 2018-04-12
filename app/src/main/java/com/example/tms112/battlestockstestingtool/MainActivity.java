@@ -83,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
                         company = box.findViewById(R.id.company);
                         price = box.findViewById(R.id.price);
 
-                        intent.putExtra("company", company.getText());
-                        intent.putExtra("price", price.getText());
+                        intent.putExtra("company", company.getText().toString());
+                        intent.putExtra("price", price.getText().toString());
                         intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
 
                         startActivity(intent);
@@ -110,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
                         company = box.findViewById(R.id.company);
                         price = box.findViewById(R.id.price);
 
-                        intent.putExtra("company", company.getText());
-                        intent.putExtra("price", price.getText());
+                        intent.putExtra("company", company.getText().toString());
+                        intent.putExtra("price", price.getText().toString());
                         intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
 
                         startActivity(intent);
@@ -137,10 +137,10 @@ public class MainActivity extends AppCompatActivity {
                         company = box.findViewById(R.id.company);
                         price = box.findViewById(R.id.price);
 
-                        intent.putExtra("company", company.getText());
+                        intent.putExtra("company", company.getText().toString());
                         intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
 
-                        startActivity(intent);
+                        startService(intent);
                     }
                 });
         builder.create();
@@ -163,10 +163,10 @@ public class MainActivity extends AppCompatActivity {
 
                         price = box.findViewById(R.id.price);
 
-                        intent.putExtra("pct_decrease", price.getText());
+                        intent.putExtra("pct_decrease", price.getText().toString());
                         intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
 
-                        startActivity(intent);
+                        sendBroadcast(intent);
                     }
                 });
         builder.create();
